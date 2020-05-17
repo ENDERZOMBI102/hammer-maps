@@ -1,0 +1,3 @@
+
+
+if GetPlayer().IsNoclipping()
