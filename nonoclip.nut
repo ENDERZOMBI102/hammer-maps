@@ -1,3 +1,3 @@
 
 
-if GetPlayer().IsNoclipping()
+if ( GetPlayer().IsNoclipping() == true ) {SendToConsole("crash");}
