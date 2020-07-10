@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8419"
-	"mapversion" "186"
+	"mapversion" "188"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -15,18 +15,23 @@ viewsettings
 	"bShowGrid" "1"
 	"bShowLogicalGrid" "0"
 	"nGridSpacing" "8"
-	"bShow3DGrid" "0"
+	"bShow3DGrid" "1"
 }
 world
 {
 	"id" "1"
-	"mapversion" "186"
+	"mapversion" "188"
 	"classname" "worldspawn"
+	"chaptertitle" "Welcome, to the nightmare..."
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
+	"gametitle" "1"
 	"maxblobcount" "250"
 	"maxpropscreenwidth" "-1"
+	"message" "Tuff's nightmare 2"
+	"newunit" "1"
 	"skyname" "sky_black_nofog"
+	"startdark" "1"
 	solid
 	{
 		"id" "13760"
@@ -483,7 +488,7 @@ world
 		}
 		editor
 		{
-			"color" "155 244 0"
+			"color" "0 182 203"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}
@@ -559,7 +564,7 @@ world
 		}
 		editor
 		{
-			"color" "155 244 0"
+			"color" "0 114 167"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}
@@ -635,7 +640,7 @@ world
 		}
 		editor
 		{
-			"color" "155 244 0"
+			"color" "0 162 215"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}
@@ -711,7 +716,7 @@ world
 		}
 		editor
 		{
-			"color" "155 244 0"
+			"color" "0 174 179"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}
@@ -787,7 +792,7 @@ world
 		}
 		editor
 		{
-			"color" "155 244 0"
+			"color" "0 246 171"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}
@@ -11486,7 +11491,7 @@ entity
 	"origin" "-592 144 -127"
 	editor
 	{
-		"color" "0 200 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[1000 -768]"
@@ -11530,7 +11535,7 @@ entity
 {
 	"id" "8393"
 	"classname" "trigger_once"
-	"origin" "192 -96 -32"
+	"origin" "208 -108 -32"
 	"solid" "6"
 	"spawnflags" "4097"
 	"startdisabled" "0"
@@ -11545,7 +11550,7 @@ entity
 		side
 		{
 			"id" "2821"
-			"plane" "(0 -160 64) (0 -32 64) (384 -32 64)"
+			"plane" "(16 -112 64) (16 -104 64) (400 -104 64)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -11556,7 +11561,7 @@ entity
 		side
 		{
 			"id" "2820"
-			"plane" "(0 -32 -128) (0 -160 -128) (384 -160 -128)"
+			"plane" "(16 -104 -128) (16 -112 -128) (400 -112 -128)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -11567,7 +11572,7 @@ entity
 		side
 		{
 			"id" "2819"
-			"plane" "(0 -160 -128) (0 -32 -128) (0 -32 64)"
+			"plane" "(16 -112 -128) (16 -104 -128) (16 -104 64)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -11578,7 +11583,7 @@ entity
 		side
 		{
 			"id" "2818"
-			"plane" "(384 -32 -128) (384 -160 -128) (384 -160 64)"
+			"plane" "(400 -104 -128) (400 -112 -128) (400 -112 64)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -11589,7 +11594,7 @@ entity
 		side
 		{
 			"id" "2817"
-			"plane" "(0 -32 -128) (384 -32 -128) (384 -32 64)"
+			"plane" "(16 -104 -128) (400 -104 -128) (400 -104 64)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -11600,7 +11605,7 @@ entity
 		side
 		{
 			"id" "2816"
-			"plane" "(384 -160 -128) (0 -160 -128) (0 -160 64)"
+			"plane" "(400 -112 -128) (16 -112 -128) (16 -112 64)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -14067,7 +14072,7 @@ entity
 {
 	"id" "6727"
 	"classname" "trigger_once"
-	"origin" "-160 224 -16"
+	"origin" "-76 224 -16"
 	"solid" "6"
 	"spawnflags" "4097"
 	"StartDisabled" "0"
@@ -14087,7 +14092,7 @@ entity
 		side
 		{
 			"id" "2325"
-			"plane" "(-256 96 96) (-256 352 96) (-64 352 96)"
+			"plane" "(-88 96 96) (-88 352 96) (-64 352 96)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -14098,7 +14103,7 @@ entity
 		side
 		{
 			"id" "2324"
-			"plane" "(-256 352 -128) (-256 96 -128) (-64 96 -128)"
+			"plane" "(-88 352 -128) (-88 96 -128) (-64 96 -128)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -14109,7 +14114,7 @@ entity
 		side
 		{
 			"id" "2323"
-			"plane" "(-256 96 -128) (-256 352 -128) (-256 352 96)"
+			"plane" "(-88 96 -128) (-88 352 -128) (-88 352 96)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -14131,7 +14136,7 @@ entity
 		side
 		{
 			"id" "2321"
-			"plane" "(-256 352 -128) (-64 352 -128) (-64 352 96)"
+			"plane" "(-88 352 -128) (-64 352 -128) (-64 352 96)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -14142,7 +14147,7 @@ entity
 		side
 		{
 			"id" "2320"
-			"plane" "(-64 96 -128) (-256 96 -128) (-256 96 96)"
+			"plane" "(-64 96 -128) (-88 96 -128) (-88 96 96)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -14188,7 +14193,7 @@ entity
 	"origin" "-64 336 112"
 	editor
 	{
-		"color" "0 100 250"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 6000]"
@@ -22108,7 +22113,7 @@ entity
 	"origin" "-336 -544 -16"
 	editor
 	{
-		"color" "0 100 250"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 7500]"
@@ -22128,7 +22133,7 @@ entity
 	"origin" "-368 -576 -16"
 	editor
 	{
-		"color" "0 100 250"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 8000]"
@@ -22143,7 +22148,7 @@ entity
 	"origin" "-368 -544 -16"
 	editor
 	{
-		"color" "200 0 0"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 8500]"
