@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8419"
-	"mapversion" "208"
+	"mapversion" "224"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "208"
+	"mapversion" "224"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -7389,14 +7389,15 @@ world
 entity
 {
 	"id" "15773"
-	"classname" "trigger_once"
-	"origin" "368 592 -16"
-	"solid" "6"
+	"classname" "trigger_multiple"
+	"origin" "368 592 -48"
 	"spawnflags" "4097"
 	"startdisabled" "0"
+	"wait" "1"
 	connections
 	{
-		"OnTrigger" "!selfRunScriptCodeScriptSteamShowURL(`https://www.youtube.com/watch?v=dQw4w9WgXcQ `)0-1"
+		"OnTrigger" "!selfRunScriptCodeScriptSteamShowURL(`https://www.youtube.com/watch?v=dQw4w9WgXcQ`);ShowMessage(`trigger`);0-1"
+		"OnTrigger" "test_doorSetAnimationNoResetopen0-1"
 	}
 	solid
 	{
@@ -7404,7 +7405,7 @@ entity
 		side
 		{
 			"id" "5947"
-			"plane" "(352 576 0) (352 608 0) (384 608 0)"
+			"plane" "(352 576 -32) (352 608 -32) (384 608 -32)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -7415,7 +7416,7 @@ entity
 		side
 		{
 			"id" "5946"
-			"plane" "(352 608 -32) (352 576 -32) (384 576 -32)"
+			"plane" "(352 608 -64) (352 576 -64) (384 576 -64)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -7426,7 +7427,7 @@ entity
 		side
 		{
 			"id" "5945"
-			"plane" "(352 576 -32) (352 608 -32) (352 608 0)"
+			"plane" "(352 576 -64) (352 608 -64) (352 608 -32)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -7437,7 +7438,7 @@ entity
 		side
 		{
 			"id" "5944"
-			"plane" "(384 608 -32) (384 576 -32) (384 576 0)"
+			"plane" "(384 608 -64) (384 576 -64) (384 576 -32)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -7448,7 +7449,7 @@ entity
 		side
 		{
 			"id" "5943"
-			"plane" "(352 608 -32) (384 608 -32) (384 608 0)"
+			"plane" "(352 608 -64) (384 608 -64) (384 608 -32)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -7459,7 +7460,7 @@ entity
 		side
 		{
 			"id" "5942"
-			"plane" "(384 576 -32) (352 576 -32) (352 576 0)"
+			"plane" "(384 576 -64) (352 576 -64) (352 576 -32)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -13107,7 +13108,7 @@ entity
 {
 	"id" "8393"
 	"classname" "trigger_once"
-	"origin" "192 -96 -32"
+	"origin" "192 -112 -64"
 	"solid" "6"
 	"spawnflags" "4097"
 	"startdisabled" "0"
@@ -13122,7 +13123,7 @@ entity
 		side
 		{
 			"id" "2821"
-			"plane" "(0 -160 64) (0 -32 64) (384 -32 64)"
+			"plane" "(0 -128 3.8147e-006) (0 -96 3.8147e-006) (384 -96 3.8147e-006)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -13133,7 +13134,7 @@ entity
 		side
 		{
 			"id" "2820"
-			"plane" "(0 -32 -128) (0 -160 -128) (384 -160 -128)"
+			"plane" "(0 -96 -128) (0 -128 -128) (384 -128 -128)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -13144,7 +13145,7 @@ entity
 		side
 		{
 			"id" "2819"
-			"plane" "(0 -160 -128) (0 -32 -128) (0 -32 64)"
+			"plane" "(0 -128 -128) (0 -96 -128) (0 -96 3.8147e-006)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -13155,7 +13156,7 @@ entity
 		side
 		{
 			"id" "2818"
-			"plane" "(384 -32 -128) (384 -160 -128) (384 -160 64)"
+			"plane" "(384 -96 -128) (384 -128 -128) (384 -128 3.8147e-006)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -13166,7 +13167,7 @@ entity
 		side
 		{
 			"id" "2817"
-			"plane" "(0 -32 -128) (384 -32 -128) (384 -32 64)"
+			"plane" "(0 -96 -128) (384 -96 -128) (384 -96 3.8147e-006)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -13177,7 +13178,7 @@ entity
 		side
 		{
 			"id" "2816"
-			"plane" "(384 -160 -128) (0 -160 -128) (0 -160 64)"
+			"plane" "(384 -128 -128) (0 -128 -128) (0 -128 3.8147e-006)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -13451,6 +13452,7 @@ entity
 	"spawnflags" "0"
 	"startdisabled" "0"
 	"suppressanimsounds" "0"
+	"targetname" "test_door"
 	"texframeindex" "0"
 	"updatechildren" "0"
 	"origin" "192 624 -128"
@@ -15644,7 +15646,7 @@ entity
 {
 	"id" "6727"
 	"classname" "trigger_once"
-	"origin" "-160 224 -16"
+	"origin" "-68 224 -16"
 	"solid" "6"
 	"spawnflags" "4097"
 	"StartDisabled" "0"
@@ -15665,7 +15667,7 @@ entity
 		side
 		{
 			"id" "2325"
-			"plane" "(-256 96 96) (-256 352 96) (-64 352 96)"
+			"plane" "(-72 96 96) (-72 352 96) (-64 352 96)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -15676,7 +15678,7 @@ entity
 		side
 		{
 			"id" "2324"
-			"plane" "(-256 352 -128) (-256 96 -128) (-64 96 -128)"
+			"plane" "(-72 352 -128) (-72 96 -128) (-64 96 -128)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -15687,7 +15689,7 @@ entity
 		side
 		{
 			"id" "2323"
-			"plane" "(-256 96 -128) (-256 352 -128) (-256 352 96)"
+			"plane" "(-72 96 -128) (-72 352 -128) (-72 352 96)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -15709,7 +15711,7 @@ entity
 		side
 		{
 			"id" "2321"
-			"plane" "(-256 352 -128) (-64 352 -128) (-64 352 96)"
+			"plane" "(-72 352 -128) (-64 352 -128) (-64 352 96)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -15720,7 +15722,7 @@ entity
 		side
 		{
 			"id" "2320"
-			"plane" "(-64 96 -128) (-256 96 -128) (-256 96 96)"
+			"plane" "(-64 96 -128) (-72 96 -128) (-72 96 96)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -15883,7 +15885,7 @@ entity
 {
 	"id" "5753"
 	"classname" "trigger_hurt"
-	"damage" "100"
+	"damage" "300"
 	"damagecap" "999"
 	"damagemodel" "0"
 	"damagetype" "256"
@@ -23680,8 +23682,9 @@ entity
 	"UseRandomTime" "0"
 	connections
 	{
-		"OnTimer" "nocheat_comRunScriptCodeif ( GetPlayer().IsNoclipping() == true ) {SendToConsole(`crash`);}0-1"
-		"OnTimer" "nocheat_comRunScriptCodeSendToConsole(`bind F5 crash`);0-1"
+		"OnTimer" "nocheat_comRunScriptCodeif ( GetPlayer().IsNoclipping() == true ) {SendToConsole(`hello`);}0-1"
+		"OnTimer" "nocheat_comRunScriptCodeSendToConsole(`bind F5 exit`);0-1"
+		"OnTimer" "nocheat_comRunScriptCodeSendToConsole(`bind F9 showtriggers_toggle`);0-1"
 	}
 	"origin" "-336 -544 -16"
 	editor
